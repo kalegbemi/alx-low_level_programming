@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * re_string - function for rev string
+ * rev_string - function for rev string
  * @s: the string
  */
 void rev_string(char *s)
