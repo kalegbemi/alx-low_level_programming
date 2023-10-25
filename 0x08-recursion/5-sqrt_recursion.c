@@ -7,22 +7,32 @@
  */
 int _sqrt_recursion(int n)
 {
-	int x = 1;
+	return (_sqrt(n, 1))
+}
+	
+	
+	
+	
+	int _sqrt(int n, int x)
+	{
+	x = 1;
 	if (n / (-1) == (n))
 	{
 	    return (-1);
 	}
 
-	while((x * x) < n)
+	if ((x * x) > n)
 	{
-	    x++;
+		return (-1);
 	}
 
-	if (x * x == n && (n % x) == 0)
+	if ((x * x) == n)
 	{
-		return x;
+	    return x;
 	}
-	 else
-	      return (-1);
+
+	return _sqrt(n, i+1);
+	
+	
 
 }
