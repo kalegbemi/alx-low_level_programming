@@ -12,8 +12,8 @@ int _sqrt_recursion(int n)
 {
 	return (_sqrt(n, 0));
 }
-	
-	
+
+
 
 /**
  * _sqrt - supporting function in finding the root of a number
@@ -21,14 +21,14 @@ int _sqrt_recursion(int n)
  * @x: the variable to iterate with
  * Return: the function
  */
-	
-	
+
+
 	int _sqrt(int n, int x)
 	{
-	
+
 	if (n < 0)
 	{
-	    return (-1);
+		return (-1);
 	}
 
 	if ((x * x) > n)
@@ -38,11 +38,8 @@ int _sqrt_recursion(int n)
 
 	if ((x * x) == n)
 	{
-	    return x;
+		return x;
 	}
-
 	return _sqrt(n, x+1);
 	
-	
-
-}
+	}
