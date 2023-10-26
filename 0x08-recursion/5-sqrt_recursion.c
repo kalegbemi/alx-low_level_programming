@@ -5,9 +5,11 @@
  * @n: the integer whose squaroot we are to find
  * Return: Always 0 (success)
  */
+int _sqrt(int n, int x);
+
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 1))
+	return (_sqrt(n, 1));
 }
 	
 	
@@ -31,7 +33,7 @@ int _sqrt_recursion(int n)
 	    return x;
 	}
 
-	return _sqrt(n, i+1);
+	return _sqrt(n, x+1);
 	
 	
 
