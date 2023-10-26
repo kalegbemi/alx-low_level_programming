@@ -38,8 +38,8 @@ int _sqrt_recursion(int n)
 
 	if ((x * x) == n)
 	{
-		return x;
+		return (x);
 	}
-	return _sqrt(n, x+1);
-	
+	return (_sqrt(n, x + 1));
+
 	}
