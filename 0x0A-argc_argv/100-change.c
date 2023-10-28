@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - program to multiply two numbers
@@ -26,46 +27,47 @@ int main (int argc, char *argv[])
 
 
 
-	while (cent != 0)
+	while (cent >= 1)
 	{
 		int x = 0;
-		if (cent > 25)
+		if (cent >= 25)
 		{
-			x = cent % 25;
+			x = cent / 25;
 			count += x;
-			cent = cent / 25;
-			return (count);
+			cent = cent % 25;
+
 		}
-		else if (cent < 25 && cent > 10)
+		else if (cent < 25 && cent >= 10)
 		{
-			x = cent % 10;
+			x = cent / 10;
 			count += x;
-			cent = cent / 10;
-			return (count);
+			cent = cent % 10;
+
 		}
-		else if (cent < 10 && cent > 5)
+		else if (cent < 10 && cent >= 5)
 		{
-			x = cent % 5;
-                        count += x;
-                        cent = cent / 5;
-			return (count);
+			x = cent / 5;
+            		count += x;
+            		cent = cent % 5;
+
 		}
-		else if (cent < 5 && cent > 2)
+		else if (cent < 5 && cent >= 2)
 		{
-			x = cent % 2;
-                        count += x;
-                        cent = cent / 2;
-			return (count);
+			x = cent / 2;
+            		count += x;
+            		cent = cent % 2;
+
 		}
 		else
 		{
 			count += cent;
-			return (count);
+			cent = cent % 1;
+
 		}
 
-		printf("%d\n", count);
+
 	}
-	
+
+   printf("%d\n", count);
 	return (0);
 }
-
