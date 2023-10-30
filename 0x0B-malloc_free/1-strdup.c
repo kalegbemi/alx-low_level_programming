@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strdup - a function to return a pointer to the copy of a string given as parameter
+ * _strdup - a function to return a pointer to the copy of a string parameter
  * @str: The string parameter passed into the function
  * Return: a pointer to the copied string
  */
@@ -17,9 +17,9 @@ char *_strdup(char *str)
 	{
 		n++;
 	}
-	
+
 	output = malloc(sizeof(*str) * (n + 1));
-	
+
 	if (output == NULL)
 		return (NULL);
 
