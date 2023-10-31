@@ -1,0 +1,45 @@
+#include "main.h"
+char *str_concat(char *s1, char *s2)
+{
+	int i = 0;
+	int j = 0;
+	int k = 0;
+	int l;
+	char *output;
+
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
+	while (s1[i])
+		i++;
+
+	while (s2[j])
+		j++;
+
+	k = i + j;
+
+	output = malloc(sizeof(char) * (k + 1));
+
+	if (output == NULL)
+		return (NULL);
+
+	j = 0;
+
+	for (l = 0; l <= k; l++)
+	{
+		if (l < i)
+		{
+			output[l] = s1[l];
+		}
+		if (l >= i)
+		{
+			output[l] = s2[j];
+			j++;
+		}
+	}
+	return (output);
+
+}
