@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * _concat - a function to concatenate 2 strings
+ * @s1: First string of the parameter
+ * @s2: Second string of the parameter
+ * Return: A pointer to the cancatenated string (success)
+ */
 char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
